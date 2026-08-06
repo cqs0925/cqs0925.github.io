@@ -15,6 +15,12 @@ title: Home
     </article>
   {% endfor %}
 {% else %}
-  {% include archive.html %}
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time>
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 {% endif %}
-
