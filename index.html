@@ -12,18 +12,26 @@
   <body>
     <main>
       <header class="profile">
-        <img class="profile-photo" src="{{ '/assets/images/profile-placeholder.svg' | relative_url }}" alt="Portrait of {{ site.author }}">
+        <div class="profile-side">
+          <img class="profile-photo" src="{{ '/assets/images/profile-placeholder.svg' | relative_url }}" alt="Portrait of {{ site.author }}">
+          <nav class="social-links" aria-label="Profile links">
+            <a href="mailto:your-email@example.com" aria-label="Email" title="Email">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm9 7.1L20.2 7H3.8l8.2 5.1Zm0 2.3L3 8.8V17h18V8.8l-9 5.6Z"/></svg>
+            </a>
+            <a href="https://github.com/cqs0925" aria-label="GitHub" title="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.7-1.3-1.7-1.1-.8.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.6.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.5.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.8 5.4-5.5 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .7Z"/></svg>
+            </a>
+            <a href="https://scholar.google.com/citations?user=cqs0925" aria-label="Google Scholar" title="Google Scholar">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 1 8l11 6 9-4.9V16h2V8L12 2Zm-6 9.7V16c0 2.2 2.7 4 6 4s6-1.8 6-4v-4.3L12 15l-6-3.3Z"/></svg>
+            </a>
+          </nav>
+        </div>
         <div class="profile-copy">
           <h1>{{ site.author }}</h1>
           <p class="statement">
             Write a short personal statement here. Describe your research interests,
             the problems you care about, and what you are currently working on.
           </p>
-          <nav class="links" aria-label="Profile links">
-            <a href="mailto:your-email@example.com">Email</a>
-            <a href="https://github.com/cqs0925">GitHub</a>
-            <a href="https://scholar.google.com/citations?user=cqs0925">Google Scholar</a>
-          </nav>
         </div>
       </header>
 

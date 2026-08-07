@@ -13,9 +13,10 @@ body {
   margin: 0;
   background: #fff;
   color: var(--text);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next", Avenir, "Segoe UI", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.6;
+  letter-spacing: -0.005em;
 }
 
 main {
@@ -38,17 +39,24 @@ a:hover { text-decoration: underline; }
 .profile-photo {
   width: 180px;
   height: 180px;
-  border-radius: 8px;
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 50%;
   object-fit: cover;
   background: #f5f5f5;
 }
 
+.profile-side {
+  width: 180px;
+}
+
 h1 {
   margin: 0 0 16px;
+  font-family: Charter, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   font-size: clamp(2rem, 5vw, 3rem);
-  font-weight: 650;
+  font-weight: 600;
   line-height: 1.1;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.025em;
 }
 
 .statement {
@@ -58,13 +66,40 @@ h1 {
   font-size: 1.08rem;
 }
 
-.links { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.social-links a {
+  width: 24px;
+  height: 24px;
+  color: #333;
+  transition: color 150ms ease, transform 150ms ease;
+}
+
+.social-links a:hover {
+  color: var(--link);
+  transform: translateY(-2px);
+}
+
+.social-links svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  fill: currentColor;
+}
 
 .papers > h2 {
   margin: 0;
   padding-bottom: 12px;
   border-bottom: 1px solid var(--text);
+  font-family: Charter, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   font-size: 1.35rem;
+  font-weight: 600;
 }
 
 .paper {
@@ -93,9 +128,11 @@ h1 {
 
 .paper-copy h3 {
   margin: 0 0 6px;
-  font-size: 1.08rem;
-  font-weight: 650;
+  font-family: Charter, "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  font-size: 1.13rem;
+  font-weight: 600;
   line-height: 1.4;
+  letter-spacing: -0.01em;
 }
 
 .authors, .venue, .paper-links { margin: 3px 0; }
@@ -107,11 +144,16 @@ h1 {
   main { width: min(100% - 32px, 920px); padding-top: 44px; }
   .profile { grid-template-columns: 112px minmax(0, 1fr); align-items: start; gap: 24px; margin-bottom: 60px; }
   .profile-photo { width: 112px; height: 112px; }
+  .profile-side { width: 112px; }
+  .social-links { gap: 14px; margin-top: 14px; }
+  .social-links a { width: 21px; height: 21px; }
   .paper { grid-template-columns: 112px minmax(0, 1fr); gap: 18px; }
   .paper-media { width: 112px; }
 }
 
 @media (max-width: 430px) {
   .profile, .paper { grid-template-columns: 1fr; }
+  .profile-side { width: 132px; }
+  .profile-photo { width: 132px; height: 132px; }
   .paper-media { width: 100%; }
 }
