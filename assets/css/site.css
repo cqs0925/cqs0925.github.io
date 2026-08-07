@@ -106,7 +106,7 @@ h1 {
 
 .paper {
   display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
   gap: 28px;
   padding: 28px 0;
   border-bottom: 1px solid var(--line);
