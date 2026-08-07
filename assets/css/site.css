@@ -106,14 +106,14 @@ h1 {
 
 .paper {
   display: grid;
-  grid-template-columns: 400px minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
   gap: 28px;
   padding: 28px 0;
   border-bottom: 1px solid var(--line);
 }
 
 .paper-media {
-  width: 400px;
+  width: 100%;
   aspect-ratio: 16 / 10;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -144,8 +144,6 @@ h1 {
   .profile { grid-template-columns: 180px minmax(0, 1fr); gap: 36px; }
   .profile-photo { width: 180px; height: 180px; }
   .profile-side { width: 180px; }
-  .paper { grid-template-columns: 260px minmax(0, 1fr); }
-  .paper-media { width: 260px; }
 }
 
 @media (max-width: 640px) {
@@ -155,8 +153,7 @@ h1 {
   .profile-side { width: 115px; }
   .social-links { gap: 14px; margin-top: 14px; }
   .social-links a { width: 21px; height: 21px; }
-  .paper { grid-template-columns: 150px minmax(0, 1fr); gap: 18px; }
-  .paper-media { width: 150px; }
+  .paper { gap: 18px; }
   .papers { padding: 22px 20px 2px; }
 }
 
