@@ -37,14 +37,16 @@
 
       <section id="papers" class="papers" aria-labelledby="papers-heading">
         <h2 id="papers-heading">Papers</h2>
-        {% for paper in site.data.papers %}
+        {% assign papers = site.data.papers | reverse %}
+        {% capture highlighted_author %}<strong>{{ site.author }}</strong>{% endcapture %}
+        {% for paper in papers %}
           <article class="paper">
             <div class="paper-media">
               <img src="{{ paper.image | relative_url }}" alt="Preview for {{ paper.title }}" loading="lazy">
             </div>
             <div class="paper-copy">
               <h3>{% if paper.url %}<a href="{{ paper.url }}">{% endif %}{{ paper.title }}{% if paper.url %}</a>{% endif %}</h3>
-              <p class="authors">{{ paper.authors }}</p>
+              <p class="authors">{{ paper.authors | replace: site.author, highlighted_author }}</p>
               <p class="venue">{{ paper.venue }}</p>
               {% if paper.links %}
                 <p class="paper-links">
