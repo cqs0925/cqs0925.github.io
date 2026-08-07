@@ -29,15 +29,15 @@ a:hover { text-decoration: underline; }
 
 .profile {
   display: grid;
-  grid-template-columns: 260px minmax(0, 1fr);
+  grid-template-columns: 280px minmax(0, 1fr);
   align-items: center;
-  gap: 52px;
-  margin-bottom: 88px;
+  gap: 72px;
+  margin-bottom: 116px;
 }
 
 .profile-photo {
-  width: 260px;
-  height: 260px;
+  width: 280px;
+  height: 280px;
   display: block;
   border: 1px solid var(--line);
   border-radius: 50%;
@@ -46,7 +46,7 @@ a:hover { text-decoration: underline; }
 }
 
 .profile-side {
-  width: 260px;
+  width: 280px;
 }
 
 h1 {
