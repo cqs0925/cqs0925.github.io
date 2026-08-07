@@ -32,7 +32,7 @@ a:hover { text-decoration: underline; }
   grid-template-columns: 280px minmax(0, 1fr);
   align-items: center;
   gap: 72px;
-  margin-bottom: 116px;
+  margin-bottom: 64px;
 }
 
 .profile-photo {
@@ -106,15 +106,15 @@ h1 {
 
 .paper {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
   gap: 28px;
-  padding: 20px 0;
+  padding: 14px 0;
   border-bottom: 1px solid var(--line);
 }
 
 .paper-media {
   width: 100%;
-  aspect-ratio: 2 / 1;
+  aspect-ratio: 2.4 / 1;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 4px;
