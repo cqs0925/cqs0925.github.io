@@ -5,3 +5,5 @@ _site/
 vendor/
 assets/images/personal.pdf
 assets/images/papers/*.mov
+assets/images/papers/camera.pdf
+assets/images/papers/skeleton.pdf

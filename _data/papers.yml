@@ -13,13 +13,13 @@
 - title: "Skeleton-Snippet Contrastive Learning with Multiscale Feature Fusion for Action Localisation"
   authors: "<strong>Q. Cheng</strong>, J. Liu, C. Morgan, A. Whone, and M. Mirmehdi."
   venue: "ICPR, 2026."
-  image: "/assets/images/papers/skeleton.pdf"
+  image: "/assets/images/papers/skeleton.png"
   url: "https://arxiv.org/abs/2512.16504"
 
 - title: "Evaluation Protocols and Validation for Cameras in Indoor Healthcare Monitoring"
   authors: "A. Dadashzadeh, J. Liu, Q. Men, <strong>Q. Cheng</strong>, K. Scott, L. Alcock, I. Craddock, and M. Mirmehdi."
   venue: "Under Review."
-  image: "/assets/images/papers/camera.pdf"
+  image: "/assets/images/papers/camera.png"
   url: "https://arxiv.org/abs/2606.25284"
 
 - title: "Every Step of the Way: Video-based Parkinsonian Turning Step Counting."
