@@ -4,3 +4,4 @@ _site/
 .sass-cache/
 vendor/
 assets/images/personal.pdf
+assets/images/papers/*.mov
