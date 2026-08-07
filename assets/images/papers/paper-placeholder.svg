@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 400" role="img" aria-labelledby="title desc">
+  <title id="title">Paper preview placeholder</title>
+  <desc id="desc">Replace this image with a paper image or animated GIF.</desc>
+  <rect width="640" height="400" fill="#fafafa"/>
+  <rect x="72" y="64" width="496" height="272" rx="4" fill="#fff" stroke="#d9d9d9" stroke-width="4"/>
+  <rect x="112" y="110" width="210" height="16" fill="#d0d0d0"/>
+  <rect x="112" y="150" width="416" height="10" fill="#e1e1e1"/>
+  <rect x="112" y="176" width="350" height="10" fill="#e1e1e1"/>
+  <rect x="112" y="222" width="130" height="74" fill="#ededed"/>
+  <rect x="262" y="222" width="266" height="10" fill="#e1e1e1"/>
+  <rect x="262" y="248" width="232" height="10" fill="#e1e1e1"/>
+  <rect x="262" y="274" width="250" height="10" fill="#e1e1e1"/>
+</svg>

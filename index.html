@@ -1,26 +1,52 @@
 ---
-layout: default
-title: Home
 ---
-
-{% if site.show_excerpts %}
-  {% for post in site.posts %}
-    <article>
-      <header>
-        <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time>
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  </head>
+  <body>
+    <main>
+      <header class="profile">
+        <img class="profile-photo" src="{{ '/assets/images/profile-placeholder.svg' | relative_url }}" alt="Portrait of {{ site.author }}">
+        <div class="profile-copy">
+          <h1>{{ site.author }}</h1>
+          <p class="statement">
+            Write a short personal statement here. Describe your research interests,
+            the problems you care about, and what you are currently working on.
+          </p>
+          <nav class="links" aria-label="Profile links">
+            <a href="mailto:your-email@example.com">Email</a>
+            <a href="https://github.com/cqs0925">GitHub</a>
+            <a href="https://scholar.google.com/citations?user=cqs0925">Google Scholar</a>
+          </nav>
+        </div>
       </header>
-      {{ post.excerpt }}
-      <p><a href="{{ post.url | relative_url }}">Continue reading</a></p>
-    </article>
-  {% endfor %}
-{% else %}
-  <ul>
-    {% for post in site.posts %}
-      <li>
-        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: site.date_format }}</time>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-{% endif %}
+
+      <section id="papers" class="papers" aria-labelledby="papers-heading">
+        <h2 id="papers-heading">Papers</h2>
+        {% for paper in site.data.papers %}
+          <article class="paper">
+            <div class="paper-media">
+              <img src="{{ paper.image | relative_url }}" alt="Preview for {{ paper.title }}" loading="lazy">
+            </div>
+            <div class="paper-copy">
+              <h3>{% if paper.url %}<a href="{{ paper.url }}">{% endif %}{{ paper.title }}{% if paper.url %}</a>{% endif %}</h3>
+              <p class="authors">{{ paper.authors }}</p>
+              <p class="venue">{{ paper.venue }}</p>
+              {% if paper.links %}
+                <p class="paper-links">
+                  {% for link in paper.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}
+                </p>
+              {% endif %}
+            </div>
+          </article>
+        {% endfor %}
+      </section>
+    </main>
+  </body>
+</html>

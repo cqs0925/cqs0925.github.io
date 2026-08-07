@@ -1,36 +1,9 @@
 title: "Qiushuo Cheng"
-author: "qiushuo"
-description: "Personal website"
+author: "Qiushuo Cheng"
+description: "Personal academic website"
 url: "https://cqs0925.github.io"
 baseurl: ""
 lang: "en"
-permalink: /:title/
-excerpt_separator: "\n\n\n"
-date_format: "%B %d, %Y"
-
-# Contrast theme
-remote_theme: niklasbuschmann/contrast@v4.8
-show_excerpts: true
-show_frame: true
-show_sidebar: false
-show_minimal: false
-
-navigation:
-  - { file: "index.html", title: "Home", icon: home }
-  # - {file: "archive.html", title: "Archive", icon: archive}
-  # - {file: "about.md", title: "About", icon: address-card}
-
-external:
-  - { title: "GitHub", icon: github, url: "https://github.com/cqs0925" }
-  - {
-      title: "Google Scholar",
-      icon: graduation-cap,
-      url: "https://scholar.google.com/citations?user=cqs0925",
-    }
-
-plugins:
-  - jekyll-remote-theme
-  - jekyll-feed
 
 exclude:
   - Gemfile

@@ -1,0 +1,19 @@
+- title: "Your First Paper Title"
+  authors: "Qiushuo Cheng, Co-author One, Co-author Two"
+  venue: "Conference or Journal Name, 2026"
+  image: "/assets/images/papers/paper-placeholder.svg"
+  url: "#"
+  links:
+    - label: "Paper"
+      url: "#"
+    - label: "Code"
+      url: "#"
+
+- title: "Your Second Paper Title"
+  authors: "Qiushuo Cheng, Collaborator One"
+  venue: "Conference or Journal Name, 2025"
+  image: "/assets/images/papers/paper-placeholder.svg"
+  url: "#"
+  links:
+    - label: "Paper"
+      url: "#"

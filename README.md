@@ -11,3 +11,7 @@ bundle exec jekyll serve
 ```
 
 Then open <http://localhost:4000>.
+
+git add .
+git commit -m "Update website content"
+git push origin main
