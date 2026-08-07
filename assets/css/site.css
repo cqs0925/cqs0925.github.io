@@ -106,14 +106,14 @@ h1 {
 
 .paper {
   display: grid;
-  grid-template-columns: 340px minmax(0, 1fr);
+  grid-template-columns: 400px minmax(0, 1fr);
   gap: 28px;
   padding: 28px 0;
   border-bottom: 1px solid var(--line);
 }
 
 .paper-media {
-  width: 340px;
+  width: 400px;
   aspect-ratio: 16 / 10;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -144,8 +144,8 @@ h1 {
   .profile { grid-template-columns: 180px minmax(0, 1fr); gap: 36px; }
   .profile-photo { width: 180px; height: 180px; }
   .profile-side { width: 180px; }
-  .paper { grid-template-columns: 220px minmax(0, 1fr); }
-  .paper-media { width: 220px; }
+  .paper { grid-template-columns: 260px minmax(0, 1fr); }
+  .paper-media { width: 260px; }
 }
 
 @media (max-width: 640px) {
