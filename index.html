@@ -5,62 +5,139 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ site.description }}">
-    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.description | escape }}">
+    <meta name="theme-color" content="#f8f7f4">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ site.title | escape }}">
+    <meta property="og:description" content="{{ site.description | escape }}">
+    <meta property="og:url" content="{{ '/' | absolute_url }}">
+    <meta property="og:image" content="{{ '/assets/images/profile.jpg' | absolute_url }}">
+    <title>{{ site.title | escape }} · Computer Vision &amp; Digital Health</title>
+    <link rel="canonical" href="{{ '/' | absolute_url }}">
+    <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
     <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   </head>
-  <body>
-    <main>
-      <header class="profile">
-        <div class="profile-side">
-          <img class="profile-photo" src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Portrait of {{ site.author }}">
-          <nav class="social-links" aria-label="Profile links">
-            <a href="mailto:qiushuo.cheng@bristol.ac.uk" aria-label="Email" title="Email">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Zm9 7.1L20.2 7H3.8l8.2 5.1Zm0 2.3L3 8.8V17h18V8.8l-9 5.6Z"/></svg>
-            </a>
-            <a href="https://github.com/cqs0925" aria-label="GitHub" title="GitHub">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .7a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.7-1.3-1.7-1.1-.8.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.6.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.5.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.8 5.4-5.5 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .7Z"/></svg>
-            </a>
-            <a href="https://scholar.google.com/citations?user=cqs0925" aria-label="Google Scholar" title="Google Scholar">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 1 8l11 6 9-4.9V16h2V8L12 2Zm-6 9.7V16c0 2.2 2.7 4 6 4s6-1.8 6-4v-4.3L12 15l-6-3.3Z"/></svg>
-            </a>
-          </nav>
-        </div>
+  <body id="top">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="#top" aria-label="Qiushuo Cheng, home">
+        <span class="monogram" aria-hidden="true">QC</span>
+        <span class="wordmark-name">Qiushuo Cheng</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#papers">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+      <header id="about" class="profile">
         <div class="profile-copy">
-          <h1>{{ site.author }}</h1>
+          <p class="eyebrow">Computer vision &amp; digital health</p>
+          {% assign name_parts = site.author | split: ' ' %}
+          <h1>{{ name_parts | first | escape }} <span>{{ name_parts | slice: 1, 10 | join: ' ' | escape }}</span></h1>
+          <p class="profile-role">Final-year PhD student · University of Bristol</p>
           <p class="statement">
-            Hello! I am a final-year PhD student in the <a href="https://uob-mavi.github.io/people/">MaVi Group</a> at the University of Bristol, advised by <a href="https://majidmirmehdi.github.io">Prof. Majid Mirmehdi</a>, 
-            <a href="https://www.nbt.nhs.uk/research-innovation/our-research/current-research/movement-disorders-research-hub/movement-disorders-research-team">Dr Catherine Morgan</a> 
-            and <a href="https://www.bristol.ac.uk/people/person/Alan-Whone-7dc718f0-295f-4dea-8fe9-bc26c12b9ea1/">Prof. Alan Whone</a>.  
-            My research focuses on computer vision and its applications in human motion analysis, 
-            including for 3D human modeling, action recognition and detection, and multimodal indoor healthcare monitoring.
-            I am grateful to be supported by the <a href="https://www.bristol.ac.uk/cdt/digital-health/">EPSRC Centre for Doctoral Training Studentship</a> 
+            Hello! I am a final-year PhD student in the <a href="https://uob-mavi.github.io/people/">MaVi Group</a> at the University of Bristol, advised by
+            <a href="https://majidmirmehdi.github.io">Prof. Majid Mirmehdi</a>,
+            <a href="https://www.nbt.nhs.uk/research-innovation/our-research/current-research/movement-disorders-research-hub/movement-disorders-research-team">Dr Catherine Morgan</a>
+            and <a href="https://www.bristol.ac.uk/people/person/Alan-Whone-7dc718f0-295f-4dea-8fe9-bc26c12b9ea1/">Prof. Alan Whone</a>.
+          </p>
+          <p class="statement">
+            My research focuses on computer vision and its applications in human motion analysis, including 3D human modeling, action recognition and detection, and multimodal indoor healthcare monitoring.
+            I am grateful to be supported by the <a href="https://www.bristol.ac.uk/cdt/digital-health/">EPSRC Centre for Doctoral Training Studentship</a>
             and the <a href="https://torus.ac.uk">TORUS project</a>.
           </p>
+          <ul class="research-tags" aria-label="Research interests">
+            <li>Computer vision</li>
+            <li>Human motion</li>
+            <li>Digital health</li>
+          </ul>
+          <div class="profile-actions">
+            <a class="button button-primary" href="mailto:{{ site.email }}">
+              Get in touch
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+            </a>
+            <a class="text-link" href="#papers">View publications <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+
+        <div class="profile-side">
+          <figure>
+            <div class="portrait-frame">
+              <img class="profile-photo" src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Qiushuo Cheng outdoors in the hills" width="800" height="800" fetchpriority="high">
+            </div>
+            <figcaption class="profile-caption">University of Bristol <span>Bristol, United Kingdom</span></figcaption>
+          </figure>
+          <nav class="social-links" aria-label="Profile links">
+            <a href="mailto:{{ site.email }}">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></svg>
+              <span>Email</span>
+            </a>
+            <a href="https://github.com/cqs0925">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .7a11.5 11.5 0 0 0-3.6 22.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.7-1.3-1.7-1.1-.8.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.6.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.5.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.8 5.4-5.5 5.7.4.4.8 1.1.8 2.2v3.2c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .7Z"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://scholar.google.com/citations?user=cqs0925">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2 1 8l11 6 9-4.9V16h2V8L12 2Zm-6 9.7V16c0 2.2 2.7 4 6 4s6-1.8 6-4v-4.3L12 15l-6-3.3Z"/></svg>
+              <span>Scholar</span>
+            </a>
+          </nav>
         </div>
       </header>
 
       <section id="papers" class="papers" aria-labelledby="papers-heading">
-        <h2 id="papers-heading">Papers</h2>
-        {% assign papers = site.data.papers | reverse %}
-        {% for paper in papers %}
-          <article class="paper">
-            <div class="paper-media">
-              <img src="{{ paper.image | relative_url }}" alt="Preview for {{ paper.title }}" loading="lazy">
-            </div>
-            <div class="paper-copy">
-              <h3>{% if paper.url %}<a href="{{ paper.url }}">{% endif %}{{ paper.title }}{% if paper.url %}</a>{% endif %}</h3>
-              <p class="authors">{{ paper.authors }}</p>
-              <p class="venue">{{ paper.venue }}</p>
-              {% if paper.links %}
-                <p class="paper-links">
-                  {% for link in paper.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}
-                </p>
-              {% endif %}
-            </div>
-          </article>
-        {% endfor %}
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2 id="papers-heading">Publications <span class="section-count">{% if site.data.papers.size < 10 %}0{% endif %}{{ site.data.papers.size }}</span></h2>
+          </div>
+          <p class="section-note">Research in computer vision,<br>human motion and digital health.</p>
+        </div>
+        <div class="paper-list">
+          {% assign papers = site.data.papers | reverse %}
+          {% for paper in papers %}
+            <article class="paper">
+              <div class="paper-media">
+                <img src="{{ paper.image | relative_url }}" alt="Research illustration for {{ paper.title | escape }}" loading="lazy" decoding="async">
+              </div>
+              <div class="paper-copy">
+                <div class="paper-meta">
+                  {% if paper.year %}<span class="paper-year">{{ paper.year }}</span>{% endif %}
+                  {% if paper.short_venue %}<span class="paper-venue">{{ paper.short_venue }}</span>{% endif %}
+                  {% if paper.status %}<span class="paper-status">{{ paper.status }}</span>{% endif %}
+                </div>
+                <h3>{% if paper.url %}<a href="{{ paper.url }}">{% endif %}{{ paper.title | escape }}{% if paper.url %}</a>{% endif %}</h3>
+                <p class="authors">{{ paper.authors }}</p>
+                <p class="venue">{{ paper.venue }}</p>
+                {% if paper.url or paper.links %}
+                  <div class="paper-links">
+                    {% if paper.url %}
+                      <a href="{{ paper.url }}" aria-label="Read paper: {{ paper.title | escape }}">Read paper <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+                    {% endif %}
+                    {% for link in paper.links %}<a href="{{ link.url }}">{{ link.label | escape }}</a>{% endfor %}
+                  </div>
+                {% endif %}
+              </div>
+            </article>
+          {% endfor %}
+        </div>
       </section>
     </main>
+
+    <footer id="contact" class="site-footer">
+      <div class="footer-copy">
+        <p class="eyebrow">Let’s connect</p>
+        <h2>Ideas are better shared.</h2>
+        <p>For research conversations and collaborations, feel free to get in touch.</p>
+      </div>
+      <a class="footer-contact" href="mailto:{{ site.email }}">{{ site.email }} <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
+      <div class="footer-bottom">
+        <span>© {{ site.time | date: '%Y' }} {{ site.author }}</span>
+        <a class="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </footer>
   </body>
 </html>

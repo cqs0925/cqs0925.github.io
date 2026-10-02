@@ -7,12 +7,16 @@ permalink: /404.html
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Page not found</title>
+    <meta name="theme-color" content="#f8f7f4">
+    <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
     <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
   </head>
   <body>
-    <main>
+    <main class="not-found">
+      <p class="eyebrow">404 · A little off the path</p>
       <h1>Page not found</h1>
-      <p>The page could not be found. <a href="{{ '/' | relative_url }}">Return home</a>.</p>
+      <p>The page you’re looking for could not be found.</p>
+      <a class="button button-primary" href="{{ '/' | relative_url }}">Return home <span aria-hidden="true">→</span></a>
     </main>
   </body>
 </html>

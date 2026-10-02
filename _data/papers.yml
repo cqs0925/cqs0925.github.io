@@ -1,30 +1,40 @@
 - title: "The Work to Make a Heat Pump Work: Investigation into the Adoption of Domestic Heat Pumps through Social Practice and Complex Systems"
   authors: "S. Wilkie, <strong>Q. Cheng</strong>, C. Mathews, A. Otify, F. J. Schofield, E. Weir, P. Marshall, and A. A. O'Kane."
   venue: "The 8th ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies (COMPASS), 2025"
+  short_venue: "ACM COMPASS"
+  year: 2025
   image: "/assets/images/papers/paper-placeholder.svg"
   url: "https://dl.acm.org/doi/10.1145/3715335.3735461"
 
 - title: "Your Turn: At Home Turning Angle Estimation for Parkinson’s Disease Severity Assessment"
   authors: "<strong>Q. Cheng</strong>, C. Morgan, A. Sikdar, A. Masullo, A. Whone, and M. Mirmehdi."
   venue: "Artificial Intelligence in Medicine, 2025 (IF = 7.8)."
+  short_venue: "Artificial Intelligence in Medicine"
+  year: 2025
   image: "/assets/images/papers/turnremap.gif"
   url: "https://www.sciencedirect.com/science/article/pii/S0933365725001290?via%3Dihub"
 
 - title: "Skeleton-Snippet Contrastive Learning with Multiscale Feature Fusion for Action Localisation"
   authors: "<strong>Q. Cheng</strong>, J. Liu, C. Morgan, A. Whone, and M. Mirmehdi."
   venue: "ICPR, 2026."
+  short_venue: "ICPR"
+  year: 2026
   image: "/assets/images/papers/skeleton.png"
   url: "https://arxiv.org/abs/2512.16504"
 
 - title: "Evaluation Protocols and Validation for Cameras in Indoor Healthcare Monitoring"
   authors: "A. Dadashzadeh, J. Liu, Q. Men, <strong>Q. Cheng</strong>, K. Scott, L. Alcock, I. Craddock, and M. Mirmehdi."
   venue: "Under Review."
+  short_venue: "Preprint"
+  status: "Under review"
   image: "/assets/images/papers/camera.png"
   url: "https://arxiv.org/abs/2606.25284"
 
 - title: "Every Step of the Way: Video-based Parkinsonian Turning Step Counting."
   authors: "<strong>Q. Cheng</strong>, J. Liu, C. Morgan, A. Whone, and M. Mirmehdi."
   venue: "BMVC, 2026."
+  short_venue: "BMVC"
+  year: 2026
   image: "/assets/images/papers/stepcount.gif"
   url: "https://arxiv.org/abs/2606.27918"
   # links:
