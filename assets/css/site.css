@@ -203,38 +203,20 @@ h1 {
 
 .paper-media, .paper-copy { min-width: 0; }
 
-.demo-link {
-  position: relative;
-  display: block;
+.paper-copy { overflow-wrap: anywhere; }
+
+.paper-media {
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 4px;
   background: #fff;
 }
 
-.demo-link img {
+.paper-media img {
   display: block;
   width: 100%;
   height: auto;
 }
-
-.demo-open {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: grid;
-  width: 28px;
-  height: 28px;
-  place-items: center;
-  border: 1px solid var(--line);
-  border-radius: 4px;
-  background: #fff;
-  color: var(--accent);
-  font-size: 18px;
-  line-height: 1;
-}
-
-.demo-link:hover, .demo-link:focus-visible { border-color: var(--accent); }
 
 .paper h3 {
   margin: 0 0 4.8px;
@@ -320,6 +302,10 @@ h1 {
 
 .button:hover { background: var(--accent); color: #fff; text-decoration: none; }
 
+@media (max-width: 720px) {
+  .paper.has-demo { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+}
+
 @media (max-width: 640px) {
   .profile {
     grid-template-columns: minmax(0, 1fr);
@@ -329,7 +315,6 @@ h1 {
 
   .profile-side { justify-self: center; }
   h1 { font-size: 36px; }
-  .paper.has-demo { grid-template-columns: minmax(0, 1fr); gap: 20px; }
 }
 
 @media (max-width: 480px) {
@@ -339,7 +324,10 @@ h1 {
   .paper-filters { gap: 8px; margin-bottom: 24px; }
   .filter-label { flex-basis: 100%; margin: 0; }
   .filter-button { padding-right: 12px; padding-left: 12px; }
-  .paper { padding: 16px; }
+  .paper { padding: 14px; }
+  .paper.has-demo { gap: 16px; }
+  .paper h3 { font-size: 18px; }
+  .authors { font-size: 15px; font-weight: 400; }
   .site-footer { padding: 28px 20px; }
   .not-found { padding-top: 56px; }
 }
