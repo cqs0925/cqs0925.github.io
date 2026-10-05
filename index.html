@@ -68,15 +68,27 @@
           <div id="paper-list" class="paper-list">
             {% assign papers = site.data.papers | reverse %}
             {% for paper in papers %}
-              <article class="paper" data-topics="{{ paper.topics | join: ' ' | escape }}">
-                <h3>{% if paper.url %}<a href="{{ paper.url }}">{% endif %}{{ paper.title | escape }}{% if paper.url %}</a>{% endif %}</h3>
-                <p class="authors">{{ paper.authors }}</p>
-                <p class="venue">{{ paper.venue | escape }}</p>
-                {% if paper.links %}
-                  <p class="paper-links">
-                    {% for link in paper.links %}<a href="{{ link.url }}">{{ link.label | escape }}</a>{% endfor %}
-                  </p>
+              {% assign has_demo = false %}
+              {% if paper.image and paper.show_demo != false %}{% assign has_demo = true %}{% endif %}
+              <article class="paper{% if has_demo %} has-demo{% endif %}" data-topics="{{ paper.topics | join: ' ' | escape }}">
+                {% if has_demo %}
+                  <div class="paper-media">
+                    <a class="demo-link" href="{{ paper.image | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size demo: {{ paper.title | escape }}">
+                      <img src="{{ paper.image | relative_url }}" alt="Research demo for {{ paper.title | escape }}"{% if paper.image_width and paper.image_height %} width="{{ paper.image_width }}" height="{{ paper.image_height }}"{% endif %} loading="lazy" decoding="async">
+                      <span class="demo-open" aria-hidden="true">↗</span>
+                    </a>
+                  </div>
                 {% endif %}
+                <div class="paper-copy">
+                  <h3>{% if paper.url %}<a href="{{ paper.url }}">{% endif %}{{ paper.title | escape }}{% if paper.url %}</a>{% endif %}</h3>
+                  <p class="authors">{{ paper.authors }}</p>
+                  <p class="venue">{{ paper.venue | escape }}</p>
+                  {% if paper.links %}
+                    <p class="paper-links">
+                      {% for link in paper.links %}<a href="{{ link.url }}">{{ link.label | escape }}</a>{% endfor %}
+                    </p>
+                  {% endif %}
+                </div>
               </article>
             {% endfor %}
           </div>

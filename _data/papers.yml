@@ -5,6 +5,7 @@
   year: 2025
   topics: [sustainability]
   image: "/assets/images/papers/paper-placeholder.svg"
+  show_demo: false
   url: "https://dl.acm.org/doi/10.1145/3715335.3735461"
 
 - title: "Your Turn: At Home Turning Angle Estimation for Parkinson’s Disease Severity Assessment"
@@ -14,6 +15,8 @@
   year: 2025
   topics: [motion, healthcare]
   image: "/assets/images/papers/turnremap.gif"
+  image_width: 640
+  image_height: 429
   url: "https://www.sciencedirect.com/science/article/pii/S0933365725001290?via%3Dihub"
 
 - title: "Skeleton-Snippet Contrastive Learning with Multiscale Feature Fusion for Action Localisation"
@@ -23,6 +26,8 @@
   year: 2026
   topics: [motion]
   image: "/assets/images/papers/skeleton.png"
+  image_width: 1364
+  image_height: 900
   url: "https://arxiv.org/abs/2512.16504"
 
 - title: "Evaluation Protocols and Validation for Cameras in Indoor Healthcare Monitoring"
@@ -32,6 +37,8 @@
   status: "Under review"
   topics: [healthcare]
   image: "/assets/images/papers/camera.png"
+  image_width: 1404
+  image_height: 993
   url: "https://arxiv.org/abs/2606.25284"
 
 - title: "Every Step of the Way: Video-based Parkinsonian Turning Step Counting."
@@ -41,6 +48,8 @@
   year: 2026
   topics: [motion, healthcare]
   image: "/assets/images/papers/stepcount.gif"
+  image_width: 640
+  image_height: 298
   url: "https://arxiv.org/abs/2606.27918"
   # links:
   #   - label: "Paper"
