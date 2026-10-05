@@ -14,7 +14,7 @@
     <meta property="og:image" content="{{ '/assets/images/profile.jpg' | absolute_url }}">
     <title>{{ site.title | escape }}</title>
     <link rel="canonical" href="{{ '/' | absolute_url }}">
-    <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+    <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}?v={{ site.time | date: '%s' }}" type="image/svg+xml">
     <link rel="preload" href="{{ '/assets/fonts/source-sans-3-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}?v={{ site.time | date: '%s' }}">
     <script src="{{ '/assets/js/site.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
@@ -73,10 +73,7 @@
               <article class="paper{% if has_demo %} has-demo{% endif %}" data-topics="{{ paper.topics | join: ' ' | escape }}">
                 {% if has_demo %}
                   <div class="paper-media">
-                    <a class="demo-link" href="{{ paper.image | relative_url }}" target="_blank" rel="noopener" aria-label="Open full-size demo: {{ paper.title | escape }}">
-                      <img src="{{ paper.image | relative_url }}" alt="Research demo for {{ paper.title | escape }}"{% if paper.image_width and paper.image_height %} width="{{ paper.image_width }}" height="{{ paper.image_height }}"{% endif %} loading="lazy" decoding="async">
-                      <span class="demo-open" aria-hidden="true">↗</span>
-                    </a>
+                    <img src="{{ paper.image | relative_url }}" alt="Research demo for {{ paper.title | escape }}"{% if paper.image_width and paper.image_height %} width="{{ paper.image_width }}" height="{{ paper.image_height }}"{% endif %} loading="lazy" decoding="async">
                   </div>
                 {% endif %}
                 <div class="paper-copy">
