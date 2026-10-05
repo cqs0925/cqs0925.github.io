@@ -3,6 +3,7 @@
   venue: "The 8th ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies (COMPASS), 2025"
   short_venue: "ACM COMPASS"
   year: 2025
+  topics: [sustainability]
   image: "/assets/images/papers/paper-placeholder.svg"
   url: "https://dl.acm.org/doi/10.1145/3715335.3735461"
 
@@ -11,6 +12,7 @@
   venue: "Artificial Intelligence in Medicine, 2025 (IF = 7.8)."
   short_venue: "Artificial Intelligence in Medicine"
   year: 2025
+  topics: [motion, healthcare]
   image: "/assets/images/papers/turnremap.gif"
   url: "https://www.sciencedirect.com/science/article/pii/S0933365725001290?via%3Dihub"
 
@@ -19,6 +21,7 @@
   venue: "ICPR, 2026."
   short_venue: "ICPR"
   year: 2026
+  topics: [motion]
   image: "/assets/images/papers/skeleton.png"
   url: "https://arxiv.org/abs/2512.16504"
 
@@ -27,6 +30,7 @@
   venue: "Under Review."
   short_venue: "Preprint"
   status: "Under review"
+  topics: [healthcare]
   image: "/assets/images/papers/camera.png"
   url: "https://arxiv.org/abs/2606.25284"
 
@@ -35,6 +39,7 @@
   venue: "BMVC, 2026."
   short_venue: "BMVC"
   year: 2026
+  topics: [motion, healthcare]
   image: "/assets/images/papers/stepcount.gif"
   url: "https://arxiv.org/abs/2606.27918"
   # links:

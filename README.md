@@ -16,10 +16,12 @@ Then open <http://localhost:4000>.
 
 - Edit the biography in `index.html` and profile details in `_config.yml`.
 - Add publications to `_data/papers.yml`, oldest first. The page displays them
-  in reverse order. Use `year`, `short_venue`, and optional `status` for the
-  publication labels, and optional `links` for resources such as code or data.
-- Add research illustrations to `assets/images/papers/`.
-- Adjust the design in `assets/css/site.css`; no JavaScript or external fonts
-  are required.
+  in reverse order. Set `venue` for the displayed conference or journal and
+  optional `links` for resources such as code or data. Use `topics` with
+  `motion`, `healthcare`, or `sustainability` for the publication filters.
+- Adjust the design in `assets/css/site.css`. The Source Sans 3 font is hosted
+  in `assets/fonts/`, with its Open Font License included.
+- Topic filtering is implemented in `assets/js/site.js`. All publications
+  remain readable when JavaScript is disabled.
 
 Build with `bundle exec jekyll build` before publishing changes to `main`.
