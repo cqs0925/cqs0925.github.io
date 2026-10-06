@@ -3,7 +3,7 @@
   venue: "The 8th ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies (COMPASS), 2025"
   short_venue: "ACM COMPASS"
   year: 2025
-  topics: [sustainability]
+  topics: [hci]
   image: "/assets/images/papers/paper-placeholder.svg"
   show_demo: false
   url: "https://dl.acm.org/doi/10.1145/3715335.3735461"
@@ -13,7 +13,7 @@
   venue: "Artificial Intelligence in Medicine, 2025 (IF = 7.8)."
   short_venue: "Artificial Intelligence in Medicine"
   year: 2025
-  topics: [motion, healthcare]
+  topics: [digital-health]
   image: "/assets/images/papers/turnremap.gif"
   image_width: 640
   image_height: 429
@@ -24,7 +24,7 @@
   venue: "ICPR, 2026."
   short_venue: "ICPR"
   year: 2026
-  topics: [motion]
+  topics: [human-centric-vision]
   image: "/assets/images/papers/skeleton.png"
   image_width: 1364
   image_height: 900
@@ -32,21 +32,21 @@
 
 - title: "Evaluation Protocols and Validation for Cameras in Indoor Healthcare Monitoring"
   authors: "A. Dadashzadeh, J. Liu, Q. Men, <strong>Q. Cheng</strong>, K. Scott, L. Alcock, I. Craddock, and M. Mirmehdi."
-  venue: "Under Review."
-  short_venue: "Preprint"
-  status: "Under review"
-  topics: [healthcare]
+  venue: "Sensors, 2026."
+  short_venue: "Sensors"
+  year: 2026
+  topics: [digital-health]
   image: "/assets/images/papers/camera.png"
   image_width: 1404
   image_height: 993
-  url: "https://arxiv.org/abs/2606.25284"
+  url: "https://doi.org/10.3390/s26175460"
 
 - title: "Every Step of the Way: Video-based Parkinsonian Turning Step Counting."
   authors: "<strong>Q. Cheng</strong>, J. Liu, C. Morgan, A. Whone, and M. Mirmehdi."
   venue: "BMVC, 2026."
   short_venue: "BMVC"
   year: 2026
-  topics: [motion, healthcare]
+  topics: [human-centric-vision]
   image: "/assets/images/papers/stepcount.gif"
   image_width: 640
   image_height: 298
