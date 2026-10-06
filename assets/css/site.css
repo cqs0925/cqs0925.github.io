@@ -12,7 +12,7 @@
   --muted: #666;
   --accent: #40045c;
   --line: #e0e0e0;
-  --content-width: 760px;
+  --content-width: 960px;
 }
 
 * { box-sizing: border-box; }
@@ -83,21 +83,21 @@ main { width: 100%; }
 
 .profile {
   display: grid;
-  grid-template-columns: 220px minmax(0, 1fr);
+  grid-template-columns: 280px minmax(0, 1fr);
   align-items: center;
-  gap: 48px;
+  gap: 44px;
   width: min(var(--content-width), calc(100% - 64px));
   margin: 0 auto;
   padding: 56px 0;
 }
 
-.profile-side { width: 200px; }
+.profile-side { width: 260px; }
 .profile-copy { min-width: 0; }
 
 .profile-photo {
   display: block;
-  width: 200px;
-  height: 200px;
+  width: 260px;
+  height: 260px;
   margin-bottom: 14px;
   border-radius: 50%;
   object-fit: cover;
@@ -108,7 +108,7 @@ main { width: 100%; }
   align-items: center;
   justify-content: center;
   gap: 12px;
-  width: 200px;
+  width: 260px;
 }
 
 .social-links a {
@@ -140,7 +140,7 @@ h1 {
   background: #fafafa;
 }
 
-.papers-content { max-width: 1120px; margin: 0 auto; }
+.papers-content { max-width: var(--content-width); margin: 0 auto; }
 
 .papers h2 {
   margin: 0 0 24px;
@@ -196,9 +196,8 @@ h1 {
 
 .paper.has-demo {
   display: grid;
-  grid-template-columns: minmax(0, 0.52fr) minmax(0, 0.48fr);
-  align-items: center;
-  gap: 28px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
 }
 
 .paper-media, .paper-copy { min-width: 0; }
@@ -303,10 +302,6 @@ h1 {
 .button:hover { background: var(--accent); color: #fff; text-decoration: none; }
 
 @media (max-width: 720px) {
-  .paper.has-demo { grid-template-columns: minmax(0, 1fr); gap: 20px; }
-}
-
-@media (max-width: 640px) {
   .profile {
     grid-template-columns: minmax(0, 1fr);
     gap: 24px;
@@ -319,6 +314,8 @@ h1 {
 
 @media (max-width: 480px) {
   .profile, .not-found { width: calc(100% - 40px); }
+  .profile-side, .social-links { width: 220px; }
+  .profile-photo { width: 220px; height: 220px; }
   .papers { padding: 28px 20px 48px; }
   .papers h2 { margin-bottom: 20px; }
   .paper-filters { gap: 8px; margin-bottom: 24px; }
