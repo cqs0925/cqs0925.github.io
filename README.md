@@ -20,8 +20,9 @@ Then open <http://localhost:4000>.
   optional `links` for resources such as code or data. Use `topics` with
   `human-centric-vision`, `digital-health`, or `hci` for the publication filters.
 - Set `image` to a PNG or animated GIF in `assets/images/papers/` to display a
-  large demo above the paper details. Include `image_width` and `image_height`
-  for its original dimensions. Demos adapt to the screen width.
+  large demo beside the paper details on desktop and above them on smaller
+  screens. Include `image_width` and `image_height` for its original dimensions.
+  Demos adapt to the screen width.
   Set `show_demo: false` for entries without a demo.
 - Adjust the design in `assets/css/site.css`. The Source Sans 3 font is hosted
   in `assets/fonts/`, with its Open Font License included.
