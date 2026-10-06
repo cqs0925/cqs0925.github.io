@@ -197,7 +197,7 @@ h1 {
 .paper.has-demo {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  gap: 16px;
+  gap: 12px;
 }
 
 .paper-media, .paper-copy { min-width: 0; }
@@ -215,7 +215,7 @@ h1 {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 240px;
+  max-height: 180px;
   object-fit: contain;
 }
 
@@ -324,8 +324,7 @@ h1 {
   .filter-label { flex-basis: 100%; margin: 0; }
   .filter-button { padding-right: 12px; padding-left: 12px; }
   .paper { padding: 14px; }
-  .paper.has-demo { gap: 14px; }
-  .paper-media img { max-height: 180px; }
+  .paper-media img { max-height: 160px; }
   .authors { font-weight: 400; }
   .site-footer { padding: 28px 20px; }
   .not-found { padding-top: 56px; }
