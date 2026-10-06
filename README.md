@@ -18,7 +18,7 @@ Then open <http://localhost:4000>.
 - Add publications to `_data/papers.yml`, oldest first. The page displays them
   in reverse order. Set `venue` for the displayed conference or journal and
   optional `links` for resources such as code or data. Use `topics` with
-  `motion`, `healthcare`, or `sustainability` for the publication filters.
+  `human-centric-vision`, `digital-health`, or `hci` for the publication filters.
 - Set `image` to a PNG or animated GIF in `assets/images/papers/` to display a
   large demo above the paper details. Include `image_width` and `image_height`
   for its original dimensions. Demos adapt to the screen width.
