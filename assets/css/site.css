@@ -215,7 +215,7 @@ h1 {
   display: block;
   width: 100%;
   height: auto;
-  max-height: 180px;
+  max-height: 220px;
   object-fit: contain;
 }
 
@@ -324,7 +324,7 @@ h1 {
   .filter-label { flex-basis: 100%; margin: 0; }
   .filter-button { padding-right: 12px; padding-left: 12px; }
   .paper { padding: 14px; }
-  .paper-media img { max-height: 160px; }
+  .paper-media img { max-height: 180px; }
   .authors { font-weight: 400; }
   .site-footer { padding: 28px 20px; }
   .not-found { padding-top: 56px; }
