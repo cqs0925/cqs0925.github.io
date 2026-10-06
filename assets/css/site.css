@@ -12,7 +12,7 @@
   --muted: #666;
   --accent: #40045c;
   --line: #e0e0e0;
-  --content-width: 960px;
+  --content-width: 880px;
 }
 
 * { box-sizing: border-box; }
@@ -219,7 +219,7 @@ h1 {
 
 .paper h3 {
   margin: 0 0 4.8px;
-  font-size: 17.6px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 1.4;
 }
@@ -230,7 +230,7 @@ h1 {
 .authors {
   margin: 0 0 4.8px;
   color: var(--muted);
-  font-size: 14.72px;
+  font-size: 16px;
   font-weight: 300;
 }
 
@@ -239,7 +239,7 @@ h1 {
 .venue {
   margin: 0;
   color: var(--muted);
-  font-size: 14.4px;
+  font-size: 16px;
   font-style: italic;
 }
 
@@ -258,7 +258,7 @@ h1 {
   border: 1px solid var(--accent);
   border-radius: 3px;
   color: var(--accent);
-  font-size: 12.8px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 1.6;
   transition: background-color 150ms ease, color 150ms ease;
@@ -323,8 +323,7 @@ h1 {
   .filter-button { padding-right: 12px; padding-left: 12px; }
   .paper { padding: 14px; }
   .paper.has-demo { gap: 16px; }
-  .paper h3 { font-size: 18px; }
-  .authors { font-size: 15px; font-weight: 400; }
+  .authors { font-weight: 400; }
   .site-footer { padding: 28px 20px; }
   .not-found { padding-top: 56px; }
 }
